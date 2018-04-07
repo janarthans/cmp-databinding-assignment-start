@@ -1,0 +1,11 @@
+app Works !
+<app-gamecontrol (getTheGeneratedNumber)="processTheNumber($event)"></app-gamecontrol>
+<div class="container">
+    <div class="row">
+        <app-odd *ngFor="let oddNumber of oddNumbersArray" [theNumber]="oddNumber"></app-odd>
+
+    </div>
+    <div class="row">
+        <app-even *ngFor="let evenNumber of evenNumbersArray" [theNumber]="evenNumber"></app-even>
+    </div>
+</div>
